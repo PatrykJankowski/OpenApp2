@@ -1,0 +1,19 @@
+.button, input[type='submit'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 306px;
+  height: 56px;
+  border-radius: 30px;
+  background: $white;
+  @include font-size(18);
+  font-weight: 700;
+  color: $text-color;
+  cursor: pointer;
+}
+
+.button--dark {
+  background-color: $black;
+  color: $white;
+}

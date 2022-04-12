@@ -1,0 +1,41 @@
+.footer {
+  position: relative;
+  margin-top: -100px;
+  padding: 360px 0 20px;
+  background-image: url(/wp-content/themes/openapp/img/footer.svg);
+  background-size: cover;
+
+  @media (min-width: $resolution-lg) {
+    margin-top: 0;
+  }
+
+  &__copyright {
+    color: $white;
+    text-align: center;
+
+    @media (min-width: $resolution-lg) {
+      text-align: left;
+    }
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+
+    text-align: center;
+    margin: $l 0;
+
+    @media (min-width: $resolution-lg) {
+      text-align: left;
+      margin: 0;
+    }
+
+    li {
+      a {
+        display: block;
+        color: $white;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

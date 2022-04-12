@@ -1,0 +1,33 @@
+.arrow {
+  border: solid $black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+
+  &--rotate-45 {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  &--rotate-90 {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+
+  &--button {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 5px 0 0 5px;
+    border-width: 0 2px 2px 0;
+    padding: 2px;
+  }
+
+  &--button-down {
+    margin: 6px 0 0 6px;
+  }
+
+  &--white {
+    border-color: $white;
+  }
+}

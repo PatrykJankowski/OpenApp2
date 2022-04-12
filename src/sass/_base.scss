@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin-top: $navigation-height-mobile;
+
+  @media (min-width: $resolution-xl) {
+    margin-top: 0;
+  }
+}
+
+body, h1, h2, h3, h4, div, span {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+section {
+  padding: 120px 0;
+
+  @media (min-width: $resolution-sm) {
+    padding: 160px 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}

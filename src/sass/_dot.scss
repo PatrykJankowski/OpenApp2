@@ -1,0 +1,12 @@
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: $primary;
+  display: none;
+
+  @media only screen and (min-width: $resolution-xl) {
+    display: block;
+  }
+}
