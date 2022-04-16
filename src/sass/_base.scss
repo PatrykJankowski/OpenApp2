@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
 }
@@ -23,11 +27,15 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
-section {
-  padding: 120px 0;
+h1 {
+  max-width: 580px;
+}
 
-  @media (min-width: $resolution-sm) {
-    padding: 160px 0;
+section {
+  padding: 70px 0;
+
+  @media (min-width: $resolution-lg) {
+    padding: 120px 0;
   }
 }
 

@@ -23,8 +23,8 @@
   margin-bottom: 70px;
 }
 
-.mb-160 {
-  margin-bottom: 160px;
+.mb-120 {
+  margin-bottom: 120px;
 }
 
 .mr-20 {
@@ -104,12 +104,20 @@
     margin-top: 0;
   }
 
+  .mb-20-lg {
+    margin-bottom: 20px;
+  }
+
   .mt-35-lg {
     margin-top: 35px;
   }
 
   .mt-70-lg {
     margin-top: 70px;
+  }
+
+  .mb-0-lg {
+    margin-bottom: 0;
   }
 
   .mb-35-lg {
@@ -140,6 +148,10 @@
 
   .mt-70-xl {
     margin-top: 70px;
+  }
+
+  .mb-0-xl {
+    margin-bottom: 0;
   }
 
   .mb-35-xl {
@@ -174,6 +186,13 @@
   margin-right: auto;
 }
 
+@media (min-width: $resolution-lg) {
+  .margin-0-lg {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .margin-left-auto {
   margin-left: auto;
 }
@@ -186,12 +205,22 @@
   height: 100%;
 }
 
+.h-min-92-lg {
+  @media (max-width: $resolution-lg - 1px) {
+    min-height: 92px;
+  }
+}
+
 .relative {
   position: relative;
 }
 
 .d-block {
   display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
 }
 
 .d-flex {
@@ -229,6 +258,10 @@
 }
 
 // font
+.font-size-16 {
+  @include font-size(16);
+}
+
 .font-size-18 {
   @include font-size(18);
 }
@@ -254,20 +287,16 @@
     @include font-size(24);
   }
 
-  .font-size-30-lg {
-    @include font-size(30);
-  }
-
   .font-size-36-lg {
     @include font-size(36);
   }
 
-  .font-size-50-lg {
-    @include font-size(50);
+  .font-size-40-lg {
+    @include font-size(40);
   }
 
-  .font-size-60-lg {
-    @include font-size(60);
+  .font-size-50-lg {
+    @include font-size(50);
   }
 
   .font-size-198-lg {
@@ -275,6 +304,9 @@
   }
 }
 
+.line-height-1 {
+  line-height: 1;
+}
 
 .color-primary {
   color: $primary;
@@ -320,16 +352,30 @@
 
 .bg-hero {
   margin-top: -$navigation-height;
-  padding-top: 180px;
-  background-image: url(/wp-content/themes/openapp/img/bg.webp);
+  padding-top: 160px;
+  //background-image: url(/wp-content/themes/openapp/img/bg.webp);
+  background-image: linear-gradient(to right top, #62ffff, #00ebff, #00d5ff, #00bdff, #00a3ff, #6599ff, #958df7, #bb7fe8, #dd8dd9, #f0a0d0, #f8b7ce, #f9cfd5);
   background-size: cover;
 
   @media (min-width: $resolution-lg) {
     height: 960px;
+    padding-top: 180px;
   }
 }
 
+.bg-img {
+  display: none;
+  opacity: .25;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
 
+  @media (min-width: $resolution-sm) {
+    display: block;
+  }
+}
 
 
 .text-align-center-lg {
@@ -363,14 +409,16 @@
 }
 
 
+.overflow-x-clip {
+  overflow-x: clip;
+}
+
 
 .phone-image {
-  width: 1054px;
+  width: 880px;
   max-width: calc(100% - 30px);
 
-  @media only screen and (min-width: $resolution-xl) {
-    width: 1054px;
-    max-width: calc(100% - 30px);
+  @media (min-width: $resolution-xl) {
     position: absolute;
     z-index: 1;
     top: calc(50% + 60px);

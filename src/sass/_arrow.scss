@@ -4,6 +4,10 @@
   display: inline-block;
   padding: 4px;
 
+  &--color-primary {
+    border-color: $primary;
+  }
+
   &--rotate-45 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -12,6 +16,18 @@
   &--rotate-90 {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
+  }
+
+  &--rotate-315 {
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+  }
+
+  @media (min-width: $resolution-lg) {
+    &--rotate-45-lg {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
   }
 
   &--button {

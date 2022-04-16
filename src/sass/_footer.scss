@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  margin-top: -100px;
+  margin-top: -$l;
   padding: 360px 0 20px;
   background-image: url(/wp-content/themes/openapp/img/footer.svg);
   background-size: cover;
@@ -20,10 +20,8 @@
 
   .menu {
     list-style: none;
+    margin: $m 0;
     padding: 0;
-
-    text-align: center;
-    margin: $l 0;
 
     @media (min-width: $resolution-lg) {
       text-align: left;

@@ -14,14 +14,6 @@ textarea {
   height: 100px;
 }
 
-input[type='submit'] {
-  border: none;
-  border-radius: 50px;
-  background: $primary;
-  color: $white;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 ::-moz-focus-inner {
   border: 0;
 }

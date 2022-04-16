@@ -1,19 +1,26 @@
-.button, input[type='submit'] {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 306px;
-  height: 56px;
+  height: 48px;
   border-radius: 30px;
   background: $white;
-  @include font-size(18);
+  @include font-size(16);
   font-weight: 700;
   color: $text-color;
   cursor: pointer;
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  @media (min-width: $resolution-lg) {
+    height: 56px;
+    @include font-size(18);
+  }
 }
 
-.button--dark {
-  background-color: $black;
+.button--primary {
+  background: $primary;
   color: $white;
 }
