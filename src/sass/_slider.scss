@@ -25,9 +25,13 @@
     position: relative;
     top: 70px;
     margin-bottom: 70px;
-    height: 700px;
+    height: 500px;
     background: url(/wp-content/themes/openapp/img/mockup.webp) no-repeat center;
     background-size: contain;
+
+    @media (min-width: $resolution-sm) {
+      height: 700px;
+    }
 
     @media (min-width: $resolution-lg) {
       top: 0;

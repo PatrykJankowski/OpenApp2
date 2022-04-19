@@ -257,6 +257,10 @@
   min-width: 46px;
 }
 
+.max-width-330 {
+  max-width: 330px;
+}
+
 // font
 .font-size-16 {
   @include font-size(16);
