@@ -27,8 +27,12 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
-h1 {
+.home h1 {
   max-width: 580px;
+}
+
+h1 {
+  max-width: 960px;
 }
 
 section {
@@ -45,4 +49,8 @@ a {
 
 img {
   max-width: 100%;
+}
+
+ol {
+  padding: 0 8px;
 }

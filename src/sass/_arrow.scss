@@ -37,6 +37,7 @@
     margin: 5px 0 0 5px;
     border-width: 0 2px 2px 0;
     padding: 2px;
+    transition: all 300ms;
   }
 
   &--button-down {
@@ -46,4 +47,9 @@
   &--white {
     border-color: $white;
   }
+}
+
+.active .arrow {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }

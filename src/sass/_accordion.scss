@@ -1,0 +1,19 @@
+.accordion {
+  background-color: transparent;
+  color: $text-color;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  @include font-size(24);
+  font-weight: 700;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  @include font-size(18);
+  transition: max-height 0.2s ease-out;
+}

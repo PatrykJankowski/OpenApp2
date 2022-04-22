@@ -10,14 +10,14 @@
             </div>
             <div class="col-lg-3 mb-20 color-white font-size-20 text-align-center-lg">
                 <div class="font-weight-700 mb-20">kontakt <div class="button-icon button-icon--white"><div class="arrow arrow--rotate-90 arrow--button arrow--button-down arrow--white"></div></div></div>
-                <div>555 555 555</div>
-                <div>kontakt@open-app.com</div>
+                <div><?php echo get_field('contact_phone', 12) ?></div>
+                <div><?php echo get_field('contact_email', 12) ?></div>
             </div>
             <div class="col-lg-3 mb-20 color-white font-size-20 text-align-center-lg">
                 <div class="font-weight-700 mb-20">adres <div class="button-icon button-icon--white"><div class="arrow arrow--rotate-90 arrow--button arrow--button-down arrow--white"></div></div></div>
-                <div>OpenApp Sp. z o.o.</div>
-                <div>ul. Prosta 20</div>
-                <div>00-850 Warszawa</div>
+                <div><?php echo get_field('contact_company', 12) ?></div>
+                <div><?php echo get_field('contact_street', 12) ?></div>
+                <div><?php echo get_field('contact_city', 12) ?></div>
             </div>
             <div class="col-lg-3 color-white font-weight-700 font-size-20 text-align-center-lg">
                 <?php wp_nav_menu(array('theme_location' => 'nav-menu-footer', 'container' => false)); ?>
@@ -68,14 +68,12 @@
     })
 
 
-    // accordion
-    let acc = document.getElementsByClassName("accordion");
-    let i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
+    // acceptance
+    let acceptance = document.getElementById("acceptance");
+    if (acceptance) {
+        acceptance.addEventListener("click", function() {
             this.classList.toggle("active");
-            var panel = this.nextElementSibling;
+            let panel = document.getElementById("acceptance-text");
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
             } else {

@@ -1,18 +1,31 @@
 // margins
-.mt-35 {
-  margin-top: 35px;
-}
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.mt-35 {
+  margin-top: 35px;
 }
 
 .mt-70 {
   margin-top: 70px;
 }
 
+.mt-124 {
+  margin-top: 124px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .mb-35 {
@@ -21,6 +34,10 @@
 
 .mb-70 {
   margin-bottom: 70px;
+}
+
+.mb-117 {
+  margin-bottom: 117px;
 }
 
 .mb-120 {
@@ -37,6 +54,10 @@
 
 .pt-0 {
   padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
 }
 
 @media (min-width: $resolution-sm) {
@@ -201,6 +222,9 @@
   --bs-gutter-x: 0;
 }
 
+
+// containers
+
 .h-100 {
   height: 100%;
 }
@@ -209,6 +233,10 @@
   @media (max-width: $resolution-lg - 1px) {
     min-height: 92px;
   }
+}
+
+.h-min-70 {
+ min-height: 70px;
 }
 
 .relative {
@@ -261,7 +289,59 @@
   max-width: 330px;
 }
 
-// font
+.width-330 {
+  width: 330px;
+}
+
+.border-radius-50 {
+  border-radius: 50px;
+}
+
+.border-primary {
+  border: 1px solid $primary
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
+}
+
+.text-align-center-lg {
+  @media (max-width: $resolution-lg - 1px) {
+    text-align: center;
+  }
+}
+
+.text-align-center-xxl {
+  @media (max-width: $resolution-xxl - 1px) {
+    text-align: center;
+  }
+}
+
+.align-items-center-lg {
+  @media (max-width: $resolution-lg - 1px) {
+    align-items: center;
+  }
+}
+
+.hide-max-lg {
+  @media only screen and (max-width: $resolution-lg - 1px) {
+    display: none;
+  }
+}
+
+.hide-lg {
+  @media only screen and (min-width: $resolution-lg) {
+    display: none;
+  }
+}
+
+
+// fonts
+
 .font-size-16 {
   @include font-size(16);
 }
@@ -346,6 +426,7 @@
 
 
 // backrounds
+
 .bg-white {
   background-color: $white;
 }
@@ -378,71 +459,5 @@
 
   @media (min-width: $resolution-sm) {
     display: block;
-  }
-}
-
-
-.text-align-center-lg {
-  @media (max-width: $resolution-lg - 1px) {
-      text-align: center;
-  }
-}
-
-.text-align-center-xxl {
-  @media (max-width: $resolution-xxl - 1px) {
-    text-align: center;
-  }
-}
-
-.align-items-center-lg {
-  @media (max-width: $resolution-lg - 1px) {
-    align-items: center;
-  }
-}
-
-.hide-max-lg {
-  @media only screen and (max-width: $resolution-lg - 1px) {
-    display: none;
-  }
-}
-
-.hide-lg {
-  @media only screen and (min-width: $resolution-lg) {
-    display: none;
-  }
-}
-
-
-.overflow-x-clip {
-  overflow-x: clip;
-}
-
-
-.phone-image {
-  width: 880px;
-  max-width: calc(100% - 30px);
-
-  @media (min-width: $resolution-xl) {
-    position: absolute;
-    z-index: 1;
-    top: calc(50% + 60px);
-    transform: translateY(-50%);
-  }
-}
-
-
-.button-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  transform: rotate(-45deg);
-  position: relative;
-  top: 5px;
-  left: 6px;
-
-  &--white {
-    border-color: $white;
   }
 }

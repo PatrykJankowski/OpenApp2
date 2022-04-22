@@ -30,7 +30,7 @@ textarea {
 //contact form 7
 .wpcf7-list-item-label {
   color: $black;
-  @include font-size(14);
+  @include font-size(16);
 }
 
 .wpcf7-not-valid-tip {
@@ -48,7 +48,7 @@ textarea {
   margin-top: -6px;
 }
 
-.invalid .wpcf7-response-output {
+.invalid .wpcf7-response-output, .unaccepted .wpcf7-response-output, .failed .wpcf7-response-output {
   margin-top: 20px;
   color: $red;
 }
@@ -70,4 +70,8 @@ textarea {
   position: absolute !important;
   width: 1px;
   word-wrap: normal !important;
+}
+
+#acceptance-text {
+  @include font-size(16);
 }

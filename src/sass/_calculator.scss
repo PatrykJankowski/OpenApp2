@@ -1,0 +1,29 @@
+.calculator {
+  height: 100%;
+  margin-right: 10px;
+  padding: $s;
+  border: 1px solid $primary;
+  border-radius: 24px;
+
+  @media (min-width: $resolution-sm) {
+    padding: $l;
+  }
+
+  &__line {
+    margin: 20px 0;
+    border: 1px dashed $primary;
+  }
+}
+
+input[type="text"].calculator__input {
+  width: 100px;
+  margin: 0 0 0 auto;
+  padding: 10px;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  text-align: center;
+
+  &:disabled {
+    border: none;
+  }
+}
