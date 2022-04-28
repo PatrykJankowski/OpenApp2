@@ -30,7 +30,7 @@ textarea {
 //contact form 7
 .wpcf7-list-item-label {
   color: $black;
-  @include font-size(16);
+  @include font-size(14);
 }
 
 .wpcf7-not-valid-tip {
@@ -73,5 +73,5 @@ textarea {
 }
 
 #acceptance-text {
-  @include font-size(16);
+  @include font-size(14);
 }

@@ -34,7 +34,7 @@
                     <div class="col-lg-6 font-size-18">
                         <div class="font-weight-700 mt-70 mb-20">Dane kontaktowe:</div>
                         <div><?php echo get_field('contact_phone') ?></div>
-                        <div><?php echo get_field('contact_email') ?></div>
+                        <a href="mailto:<?php echo get_field('contact_email', 12) ?>" class="color-black text-underline"><?php echo get_field('contact_email', 12) ?></a>
                     </div>
                 </div>
             </div>

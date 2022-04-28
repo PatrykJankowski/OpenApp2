@@ -11,7 +11,7 @@
             <div class="col-lg-3 mb-20 color-white font-size-20 text-align-center-lg">
                 <div class="font-weight-700 mb-20">kontakt <div class="button-icon button-icon--white"><div class="arrow arrow--rotate-90 arrow--button arrow--button-down arrow--white"></div></div></div>
                 <div><?php echo get_field('contact_phone', 12) ?></div>
-                <div><?php echo get_field('contact_email', 12) ?></div>
+                <a href="mailto:<?php echo get_field('contact_email', 12) ?>" class="color-white text-underline"><?php echo get_field('contact_email', 12) ?></a>
             </div>
             <div class="col-lg-3 mb-20 color-white font-size-20 text-align-center-lg">
                 <div class="font-weight-700 mb-20">adres <div class="button-icon button-icon--white"><div class="arrow arrow--rotate-90 arrow--button arrow--button-down arrow--white"></div></div></div>
