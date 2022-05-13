@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-lg-6 relative">
-                <img src="/wp-content/themes/openapp/img/hero.webp" width="484" height="670" class="mt-70 mt-0-lg max d-block margin-auto h-max-500-h900 object-fit-contain">
+                <img src="/wp-content/themes/openapp/img/hero.webp" width="579" height="670" class="mt-70 mt-0-lg max d-block margin-auto h-max-500-h900 object-fit-contain">
             </div>
         </div>
     </div>
